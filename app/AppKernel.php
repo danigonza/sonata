@@ -20,8 +20,11 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Tvs\WebBundle\TvsWebBundle(),
-            new FOS\UserBundle\FOSUserBundle(),
-            new Inthe\DevBundle\IntheDevBundle(),
+            //new FOS\UserBundle\FOSUserBundle(),
+            //new Inthe\DevBundle\IntheDevBundle(),
+            new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Sonata\AdminBundle\SonataAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
