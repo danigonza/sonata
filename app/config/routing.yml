@@ -1,0 +1,3 @@
+tvs_web:
+    resource: "@TvsWebBundle/Resources/config/routing.yml"
+    prefix:   /

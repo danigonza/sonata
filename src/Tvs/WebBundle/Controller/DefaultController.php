@@ -1,0 +1,13 @@
+<?php
+
+namespace Tvs\WebBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class DefaultController extends Controller
+{
+    public function indexAction($name)
+    {
+        return $this->render('TvsWebBundle:Default:index.html.twig', array('name' => $name));
+    }
+}

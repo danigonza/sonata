@@ -1,0 +1,7 @@
+parameters:
+#    tvs_web.example.class: Tvs\WebBundle\Example
+
+services:
+#    tvs_web.example:
+#        class: %tvs_web.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
