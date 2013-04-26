@@ -1,3 +1,0 @@
-tvs_admin_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: TvsAdminBundle:Default:index }

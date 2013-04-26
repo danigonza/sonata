@@ -1,10 +1,6 @@
-#tvs_admin:
-#    resource: "@TvsAdminBundle/Resources/config/routing.yml"
-#    prefix:   /admin
-
-#inthe_dev:
-#    resource: "@IntheDevBundle/Resources/config/routing.yml"
-#    prefix:   /
+_welcome:
+    pattern:  /
+    defaults: { _controller: TvsWebBundle:Welcome:index }
 
 tvs_web:
     resource: "@TvsWebBundle/Resources/config/routing.yml"
@@ -45,3 +41,15 @@ sonata_user:
 admin_dashboard:
     pattern: /admin
     defaults: { _controller: SonataAdminBundle:Core:dashboard }
+
+sonata_page_cache:
+    resource: '@SonataCacheBundle/Resources/config/routing/cache.xml'
+    prefix: /
+
+sonata_page_exceptions:
+    resource: '@SonataPageBundle/Resources/config/routing/exceptions.xml'
+    prefix: /
+
+sonata_page_cache:
+    resource: '@SonataPageBundle/Resources/config/routing/cache.xml'
+    prefix: /

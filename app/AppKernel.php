@@ -22,7 +22,6 @@ class AppKernel extends Kernel
             new Tvs\WebBundle\TvsWebBundle(),
             #new Inthe\DevBundle\IntheDevBundle(),
             new Sonata\CacheBundle\SonataCacheBundle(),
-            new Tvs\AdminBundle\TvsAdminBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
@@ -32,6 +31,11 @@ class AppKernel extends Kernel
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+            new Sonata\SeoBundle\SonataSeoBundle(),
+            new Sonata\NotificationBundle\SonataNotificationBundle(),
+            new Sonata\PageBundle\SonataPageBundle(),
+            new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
+            new Symfony\Cmf\Bundle\RoutingExtraBundle\SymfonyCmfRoutingExtraBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

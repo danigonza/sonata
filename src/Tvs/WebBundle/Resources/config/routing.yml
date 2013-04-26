@@ -1,3 +1,7 @@
 tvs_web_homepage:
-    pattern:  /hello/{name}
+    pattern:  /
     defaults: { _controller: TvsWebBundle:Default:index }
+
+contacto:
+    pattern:   /contacto
+    defaults: { _controller: TvsWebBundle:Welcome:contact }
